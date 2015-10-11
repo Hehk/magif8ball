@@ -21,6 +21,7 @@ if (Meteor.isClient) {
         'url(' + curImage + ')'
       );
     } while (curImage === prevImage);
+    prevImage = curImage;
   };
 
   var positive = [
