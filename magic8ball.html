@@ -1,0 +1,16 @@
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <title>magic8ball</title>
+</head>
+
+<body>
+  {{> display}}
+</body>
+
+<template name="display">
+  <div class="background"></div>
+  <div class="content">
+      <div class="message">{{message}}</div>
+      <div class="button">Roll!</div>
+  </div>
+</template>

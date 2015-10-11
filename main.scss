@@ -1,0 +1,68 @@
+.removeStyle {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  z-index: 1;
+  font-family: 'Montserrat';
+  text-align: center;
+  @extend .removeStyle;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  z-index: 0;
+  background-color: black;
+  background-image: none;
+  background-size: cover;
+}
+
+.content {
+  @extend .removeStyle;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+
+  .message {
+    font-size: 120px;
+    font-weight: bold;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: white;
+  }
+
+  .button {
+    padding: 20px;
+    border: none;
+    color: white;
+    background-color: #2EC4B6;
+    font-size: 32px;
+
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    outline: none;
+
+    &:hover {
+      box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.5);
+    }
+
+    &:active {
+      background-color: #1e7f76;
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  div, .button {
+    position: relative;
+    margin: auto;
+  }
+}
